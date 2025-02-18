@@ -1,0 +1,6 @@
+@StriveRoPrototypeOne.API_HostAddress = http://localhost:5290
+
+GET {{StriveRoPrototypeOne.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
