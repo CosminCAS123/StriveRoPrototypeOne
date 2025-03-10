@@ -1,0 +1,66 @@
+﻿/* Main Headline */
+.headline {
+    color: #E0E0E0; /* Soft white for readability */
+    text-align: center;
+    text-shadow: 0px 0px 10px rgba(0, 255, 128, 0.8), /* Strong green glow */
+    0px 0px 5px rgba(0, 255, 128, 0.6); /* Extra depth */
+    font-weight: bold;
+    transition: text-shadow 0.3s ease-in-out;
+}
+
+    .headline:hover {
+        text-shadow: 0px 0px 15px rgba(0, 255, 128, 1), /* Brighter green */
+        0px 0px 8px rgba(0, 255, 128, 0.8);
+    }
+
+/* Subheadline */
+.subheadline {
+    color: #D0D0D0; /* Slightly dimmer white for subtle contrast */
+    text-align: center;
+    text-shadow: 0px 0px 8px rgba(0, 255, 128, 0.6), 0px 0px 4px rgba(0, 255, 128, 0.4);
+    font-weight: 500;
+    transition: text-shadow 0.3s ease-in-out;
+}
+
+    .subheadline:hover {
+        text-shadow: 0px 0px 12px rgba(0, 255, 128, 0.9), 0px 0px 6px rgba(0, 255, 128, 0.7);
+    }
+
+/* Call-to-Action Button */
+.cta-button {
+    font-size: 1.2rem;
+    padding: 10px 24px;
+    border-radius: 6px;
+    background-color: #1E1E1E !important; /* Dark background */
+    color: white !important;
+    box-shadow: 0px 0px 10px rgba(0, 255, 128, 0.6); /* Soft glow */
+    transition: all 0.3s ease-in-out;
+    font-weight: 500;
+    text-transform: none;
+    border: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .cta-button:hover {
+        background-color: #292929 !important; /* Slightly lighter */
+        box-shadow: 0px 0px 15px rgba(0, 255, 128, 0.9); /* Stronger green glow */
+        transform: translateY(-2px);
+    }
+
+
+.fullscreen-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #1A1A1A; /* Slightly brighter than pure black */
+    margin: 0;
+    padding-top: 80px; /* Adjust this value to move content down */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
