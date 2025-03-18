@@ -52,15 +52,56 @@
 
 .fullscreen-container {
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh; /* Use min-height here instead of height */
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    background-color: #1A1A1A; /* Slightly brighter than pure black */
+    background-color: #1A1A1A;
     margin: 0;
-    padding-top: 80px; /* Adjust this value to move content down */
+    padding-top: 80px;
     position: absolute;
     top: 0;
     left: 0;
 }
+
+
+.section-header {
+    font-size: 2rem; /* Large, clear font size */
+    font-weight: bold; /* Semi-bold for emphasis */
+    margin-top: 5rem; /* Spacing from previous element */
+    margin-bottom: 1rem; /* Spacing before next section */
+    color: white; /* Dark grey for readability */
+    text-align: center; /* Centered alignment */
+    text-shadow: 0px 0px 10px rgba(0, 255, 128, 0.8), /* Strong green glow */
+    0px 0px 5px rgba(0, 255, 128, 0.6); /* Extra depth */
+    transition: text-shadow 0.3s ease-in-out;
+}
+
+.how-it-works-card {
+    max-width: 1000px;
+    margin: auto;
+    background-color: #212121; /* Dark charcoal background */
+    color: #f0f0f0; /* Soft white text for contrast */
+    border-radius: 12px; /* Rounded corners for softer aesthetics */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* More pronounced shadow */
+    overflow: hidden; /* Ensures content stays rounded within corners */
+}
+
+.mud-carousel {
+    height: 400px !important;
+}
+
+.mud-carousel-item {
+    height: 100%;
+}
+
+.how-it-works-card {
+    height: 100%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+
+
+
