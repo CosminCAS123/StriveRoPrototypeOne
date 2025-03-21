@@ -1,0 +1,17 @@
+[
+  {
+    "title": "Înregistrează-te simplu",
+    "description": "În mai puțin de un minut faci primul pas către transformarea ta personală. O decizie mică pentru rezultate mari.",
+    "image": "images/card1img.jpg"
+  },
+  {
+    "title": "Personalizează-ți obiectivele",
+    "description": "Stabilește-ți clar prioritățile și permite platformei să te ghideze zilnic spre versiunea ta ideală. Progresul începe cu tine.",
+    "image": "images/card2img.jpg"
+  },
+  {
+    "title": "Vezi rezultate clare",
+    "description": "Observă constant progresul făcut și simte motivația reușitei. Fiecare zi te aduce mai aproape de obiectivele tale.",
+    "image": "images/card3img.jpg"
+  }
+]

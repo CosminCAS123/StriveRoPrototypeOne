@@ -33,14 +33,18 @@
                 </MudText>
             </div>
             <MudCarousel ItemsSource="@Steps"
+                          SelectedIndex="0"
                          ShowArrows="@arrows"
                          ShowBullets="@bullets"
                          EnableSwipeGesture="@enableSwipe"
+                         TransitionAutoCycle="true"
+                         AutoCycleInterval="3000"
                          Style="width:100%; height:400px;">
+
                 <ItemTemplate>
                     <MudCard Class="how-it-works-card" Style="height:100%;">
                         <MudCardContent Class="d-flex flex-row" Style="padding:0; height:100%;">
-                            <MudCardMedia Image="@context.Image" style="width:50%; height:100%; object-fit:cover;" />
+                            <MudCardMedia Image="@context.Image" Style="width:50%; height:100%; object-fit:cover;" />
                             <div style="width:50%; padding:2rem;">
                                 <MudText Typo="Typo.h4">@context.Title</MudText>
                                 <MudText Typo="Typo.body1">@context.Description</MudText>
@@ -48,8 +52,8 @@
                         </MudCardContent>
                     </MudCard>
                 </ItemTemplate>
-            </MudCarousel>
 
+            </MudCarousel>
 
 
 
@@ -81,44 +85,26 @@
     private bool arrows = true;
     private bool bullets = true;
     private bool enableSwipe = true;
+    
 
     private SocialProofEntry entry;
+    private List<StepInfo> Steps = new();
 
 
     protected override async Task OnInitializedAsync()
     {
-        var all_entries_json = await http.GetFromJsonAsync<List<SocialProofEntry>>("sample-data/socialProofData.json");
-        this.entry = all_entries_json?.FirstOrDefault();
-
+       
+            var all_entries_json = await http.GetFromJsonAsync<List<SocialProofEntry>>("sample-data/socialProofData.json");
+            this.Steps = await http.GetFromJsonAsync<List<StepInfo>>("sample-data/howItWorksData.json");
+            this.entry = all_entries_json?.FirstOrDefault();
+           
+       
     }
 
-    private List<StepInfo> Steps = new()
-    {
-        new StepInfo
-        {
-            Title = "Înregistrează-te simplu",
-            Description = "În mai puțin de un minut faci primul pas către transformarea ta personală. O decizie mică pentru rezultate mari.",
-            Image = "images/card1img.jpg"
-        },
-        new StepInfo
-        {
-            Title = "Personalizează-ți obiectivele",
-            Description = "Stabilește-ți clar prioritățile și permite platformei să te ghideze zilnic spre versiunea ta ideală. Progresul începe cu tine.",
-            Image = "images/card2img.jpg"
-        },
-        new StepInfo
-        {
-            Title = "Vezi rezultate clare",
-            Description = "Observă constant progresul făcut și simte motivația reușitei. Fiecare zi te aduce mai aproape de obiectivele tale.",
-            Image = "images/card3img.jpg"
-        }
-    };
 
-    public class StepInfo
-    {
-        public string Title { get; set; }
-        public string Description { get; set; }
-        public string Image { get; set; }
-    }
+
+ 
+
+   
 
 }
