@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StriveRoPrototypeOne", "StriveRoPrototypeOne\StriveRoPrototypeOne.csproj", "{F1696E99-0A1D-4579-8DF0-E7165C3301BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StriveRoPrototypeOne", "StriveRoPrototypeOne\StriveRoPrototypeOne.csproj", "{F1696E99-0A1D-4579-8DF0-E7165C3301BD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StriveRoPrototypeOne.API", "StriveRoPrototypeOne.API\StriveRoPrototypeOne.API.csproj", "{6FBE38F3-A05B-4398-AED1-95A3DB77C012}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StriveRoPrototypeOne.API", "StriveRoPrototypeOne.API\StriveRoPrototypeOne.API.csproj", "{6FBE38F3-A05B-4398-AED1-95A3DB77C012}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StriveRoPrototypeOne.Shared", "StriveRoPrototypeOne.Shared\StriveRoPrototypeOne.Shared.csproj", "{F9E96210-C6EA-4F35-9B15-4B3622B50FA2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "StriveRoPrototypeOne.Shared", "StriveRoPrototypeOne.Shared\StriveRoPrototypeOne.Shared.csproj", "{F9E96210-C6EA-4F35-9B15-4B3622B50FA2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Andrei Popescu",
+    "logoUrl": "images/clients/client1.png",
+    "testimonial": "Strive RO has streamlined our workflow beautifully.",
+    "stars": 5
+  },
+  {
+    "name": "Maria Ionescu",
+    "logoUrl": "images/clients/client2.png",
+    "testimonial": "Very helpful tools, intuitive and easy to use.",
+    "stars": 4
+  },
+  {
+    "name": "Luca Dumitrescu",
+    "logoUrl": "images/clients/client3.png",
+    "testimonial": "Good experience overall. A few things could improve.",
+    "stars": 3
+  },
+  {
+    "name": "Elena Stan",
+    "logoUrl": "images/clients/client4.png",
+    "testimonial": "Great platform for personal growth!",
+    "stars": 5
+  },
+  {
+    "name": "Carlos Mendez",
+    "logoUrl": "images/clients/client5.png",
+    "testimonial": "Solid features and clean interface.",
+    "stars": 4
+  },
+  {
+    "name": "Ioana Marinescu",
+    "logoUrl": "images/clients/client6.png",
+    "testimonial": "Motivating and simple to use. Love it!",
+    "stars": 5
+  },
+  {
+    "name": "George Mihai",
+    "logoUrl": "images/clients/client7.png",
+    "testimonial": "Really keeps me on track. Would recommend.",
+    "stars": 4
+  },
+  {
+    "name": "Sofia Petrescu",
+    "logoUrl": "images/clients/client8.png",
+    "testimonial": "Clean UI and helpful content.",
+    "stars": 5
+  },
+  {
+    "name": "Anna Schmidt",
+    "logoUrl": "images/clients/client9.png",
+    "testimonial": "Pretty good platform with nice potential.",
+    "stars": 3
+  },
+  {
+    "name": "Radu Ilie",
+    "logoUrl": "images/clients/client10.png",
+    "testimonial": "Exactly what I needed to stay productive.",
+    "stars": 5
+  },
+  {
+    "name": "Tariq Al-Mansour",
+    "logoUrl": "images/clients/client11.png",
+    "testimonial": "Functional and visually appealing.",
+    "stars": 4
+  },
+  {
+    "name": "Isabela Cojocaru",
+    "logoUrl": "images/clients/client12.png",
+    "testimonial": "Awesome UX and smooth performance!",
+    "stars": 5
+  }
+]

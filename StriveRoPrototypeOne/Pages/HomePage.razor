@@ -1,5 +1,9 @@
 ﻿@page "/"
 @using MudBlazor
+@using Models
+@using Components
+
+@inject HttpClient http
 
 <div class="fullscreen-container">
     <MudContainer MaxWidth="MaxWidth.Large">
@@ -52,6 +56,23 @@
             <MudSpacer>
 
             </MudSpacer>
+
+            <div class="section-header">
+                <MudText Typo="Typo.h4" Align="Align.Center">
+                    Clienți satisfăcuți
+                </MudText>
+            </div>
+            <MudSpacer>
+
+            </MudSpacer>
+            @if(this.entry is not null)
+            {
+                <StriveRoPrototypeOne.Components.SocialProofCard Entry="this.entry">
+
+                </StriveRoPrototypeOne.Components.SocialProofCard>
+            }
+
+
         </MudStack>
     </MudContainer>
 </div>
@@ -60,6 +81,16 @@
     private bool arrows = true;
     private bool bullets = true;
     private bool enableSwipe = true;
+
+    private SocialProofEntry entry;
+
+
+    protected override async Task OnInitializedAsync()
+    {
+        var all_entries_json = await http.GetFromJsonAsync<List<SocialProofEntry>>("sample-data/socialProofData.json");
+        this.entry = all_entries_json?.FirstOrDefault();
+
+    }
 
     private List<StepInfo> Steps = new()
     {
